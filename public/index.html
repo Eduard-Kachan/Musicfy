@@ -17,28 +17,66 @@
       </ul>
     </header>
     <div class="main"></div>
-    <footer class="footer">
-      <p>Copyright &copy; 2014</p>
-    </footer>
+    <div class="audioPlayer">
+      <audio controls>
+        Your browser does not support the audio element.
+        
+        
+      </audio>
+    </div>
   </div>
   <!-- ------------------------------->
   <!-- Templates-->
   <!-- ------------------------------->
   <script id="home" type="text/template">
-    <div class="page home">{{{content}}}</div>
+    <h1 class="title">Featured</h1>
+    <ul class="songsFeatured">
+      {{#songs}}
+      <li>
+        <h4>{{songName}}</h4>
+      </li>
+    {{/songs}}
+    </ul>
     
   </script>
   <script id="artists" type="text/template">
-    <div class="page about">
-      <h1>{{title}}</h1>
-      <section>
-      {{#artists}}
-          <div>
-            <a href = "/artists/{{url}}">{{name}}</a>
-          </div>
-      {{/artists}}
-      </section>
+    <h1>{{title}}</h1>
+    <div class="artists">
+    {{#artists}}
+      <div>
+        <a href = "/artists/{{url}}"></a>
+        <img src = "{{imageUrl}}"/>
+        <h3>{{name}}</h3>
+      </div>
+    {{/artists}}
     </div>
+    
+  </script>
+  <script id="artist" type="text/template">
+    <h1 class="title">{{artist}}</h1>
+    <img  class="artistPic" src = "{{artistImageUrl}}"/>
+    <h2 class="title">Albums:</h2>
+    <ul class="albums">
+    {{#albums}}
+      <li>
+        <img src = "{{imageUrl}}">
+        <h3><a href = "/artists/{{url}}">{{name}}</a></h3>
+      </li>
+    {{/albums}}
+    </ul>
+    
+  </script>
+  <script id="album" type="text/template">
+    <h1 class="title">{{artist}}: {{album}}</h1>
+    <img src = "{{albumImageUrl}}" class="artistPic"/>
+    <h2 class="title">Songs:</h2>
+    <ul class="songs">
+    {{#songs}}
+      <li>
+        <h4>{{name}}</h4>
+      </li>
+    {{/songs}}
+    </ul>
     
     
     
