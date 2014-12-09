@@ -6,6 +6,7 @@
   <title>Musicfy - Listen to awesome music!</title>
   <meta name="description" content="Hello World">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <link href="/assets/styles/jplayer.blue.monday.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css">
   <body></body>
   <div class="wrapper">
@@ -18,11 +19,55 @@
     </header>
     <div class="main"></div>
     <div class="audioPlayer">
-      <audio controls>
-        Your browser does not support the audio element.
-        
-        
-      </audio>
+      <div id="jp_container_N" role="application" aria-label="media player" class="jp-video jp-video-270p">
+        <div class="jp-type-playlist">
+          <div id="jquery_jplayer_N" class="jp-jplayer"></div>
+          <div class="jp-gui">
+            <div class="jp-video-play">
+              <button role="button" tabindex="0" class="jp-video-play-icon">play</button>
+            </div>
+            <div class="jp-interface">
+              <div class="jp-progress">
+                <div class="jp-seek-bar">
+                  <div class="jp-play-bar"></div>
+                </div>
+              </div>
+              <div role="timer" aria-label="time" class="jp-current-time">&nbsp;</div>
+              <div role="timer" aria-label="duration" class="jp-duration">&nbsp;</div>
+              <div class="jp-controls-holder">
+                <div class="jp-controls">
+                  <button role="button" tabindex="0" class="jp-previous">previous</button>
+                  <button role="button" tabindex="0" class="jp-play">play</button>
+                  <button role="button" tabindex="0" class="jp-next">next</button>
+                  <button role="button" tabindex="0" class="jp-stop">stop</button>
+                </div>
+                <div class="jp-volume-controls">
+                  <button role="button" tabindex="0" class="jp-mute">mute</button>
+                  <button role="button" tabindex="0" class="jp-volume-max">max volume</button>
+                  <div class="jp-volume-bar">
+                    <div class="jp-volume-bar-value"></div>
+                  </div>
+                </div>
+                <div class="jp-toggles">
+                  <button role="button" tabindex="0" class="jp-repeat">repeat</button>
+                  <button role="button" tabindex="0" class="jp-shuffle">shuffle</button>
+                  <button role="button" tabindex="0" class="jp-full-screen">full screen</button>
+                </div>
+              </div>
+              <div class="jp-details">
+                <div aria-label="title" class="jp-title">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <div class="jp-playlist">
+            <ul>
+              <!-- The method Playlist.displayPlaylist() uses this unordered list-->
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+          <div class="jp-no-solution"><span>Update Required</span><a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a></div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- ------------------------------->
@@ -33,7 +78,7 @@
     <ul class="songsFeatured">
       {{#songs}}
       <li>
-        <h4>{{songName}}</h4>
+        <h4><a class="song" href="{{songUrl}}">{{songName}}</a></h4>
       </li>
     {{/songs}}
     </ul>
@@ -73,7 +118,7 @@
     <ul class="songs">
     {{#songs}}
       <li>
-        <h4>{{name}}</h4>
+        <h4><a href = "/artists/{{url}}">{{name}}</a></h4>
       </li>
     {{/songs}}
     </ul>
@@ -88,6 +133,8 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script type="text/javascript" src="/assets/scripts/playlist.js"></script>
+  <script type="text/javascript" src="/assets/scripts/jplayer.js"></script>
   <!-- ------------------------------->
   <!-- Application-->
   <!-- ------------------------------->

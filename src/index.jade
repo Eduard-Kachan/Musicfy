@@ -13,6 +13,8 @@ html
 
   meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
+  link(href="/assets/styles/jplayer.blue.monday.css" rel="stylesheet" type="text/css")
+
   link(rel="stylesheet", href="/assets/styles/styles.css", type="text/css")
 
   body
@@ -33,8 +35,44 @@ html
     div.main
 
     div.audioPlayer
-      audio(controls).
-        Your browser does not support the audio element.
+      #jp_container_N.jp-video.jp-video-270p(role='application', aria-label='media player')
+        .jp-type-playlist
+          #jquery_jplayer_N.jp-jplayer
+          .jp-gui
+            .jp-video-play
+              button.jp-video-play-icon(role='button', tabindex='0') play
+            .jp-interface
+              .jp-progress
+                .jp-seek-bar
+                  .jp-play-bar
+              .jp-current-time(role='timer', aria-label='time') &nbsp;
+              .jp-duration(role='timer', aria-label='duration') &nbsp;
+              .jp-controls-holder
+                .jp-controls
+                  button.jp-previous(role='button', tabindex='0') previous
+                  button.jp-play(role='button', tabindex='0') play
+                  button.jp-next(role='button', tabindex='0') next
+                  button.jp-stop(role='button', tabindex='0') stop
+                .jp-volume-controls
+                  button.jp-mute(role='button', tabindex='0') mute
+                  button.jp-volume-max(role='button', tabindex='0') max volume
+                  .jp-volume-bar
+                    .jp-volume-bar-value
+                .jp-toggles
+                  button.jp-repeat(role='button', tabindex='0') repeat
+                  button.jp-shuffle(role='button', tabindex='0') shuffle
+                  button.jp-full-screen(role='button', tabindex='0') full screen
+              .jp-details
+                .jp-title(aria-label='title') &nbsp;
+          .jp-playlist
+            ul
+              // The method Playlist.displayPlaylist() uses this unordered list
+              li &nbsp;
+          .jp-no-solution
+            span Update Required
+            a(href='http://get.adobe.com/flashplayer/', target='_blank') Flash plugin
+
+
 
 
   // -----------------------------
@@ -46,7 +84,7 @@ html
     <ul class="songsFeatured">
       {{#songs}}
       <li>
-        <h4>{{songName}}</h4>
+        <h4><a class="song" href="{{songUrl}}">{{songName}}</a></h4>
       </li>
     {{/songs}}
     </ul>
@@ -83,7 +121,7 @@ html
     <ul class="songs">
     {{#songs}}
       <li>
-        <h4>{{name}}</h4>
+        <h4><a href = "/artists/{{url}}">{{name}}</a></h4>
       </li>
     {{/songs}}
     </ul>
@@ -102,6 +140,9 @@ html
 
   script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
 
+  script(type="text/javascript", src="/assets/scripts/playlist.js")
+
+  script(type="text/javascript", src="/assets/scripts/jplayer.js")
 
   // -----------------------------
   // Application

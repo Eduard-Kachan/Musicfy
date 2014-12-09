@@ -14,7 +14,7 @@ jQuery(function($) {
       ['Kevin MacLeod', 'Calming', 'Bathed in the Light'],
       ['Kevin MacLeod', 'Calming', 'Danse Morialta'],
       ['Thee Irma & Louise', 'Live at the Winston', '2 Live at the Winston'],
-      ['Thee Irma & Louise', 'CalLive at the Winstonming', '7 Live at the Winston'],
+      ['Thee Irma & Louise', 'Live at the Winston', '7 Live at the Winston'],
       ['Thee Irma & Louise', 'White Hell', 'Bones'],
       ['Thee Irma & Louise', 'White Hell', 'White hell']
     ],
@@ -272,12 +272,13 @@ jQuery(function($) {
         var featuredItem = findSong(Data.featured[i]);
         this.songs.push({
           albumImgUrl: featuredItem.album.imageUrl,
+          songArtist: featuredItem.artist.name,
+          songAlbum: featuredItem.album.name,
           songName: featuredItem.song.name,
-          songUrl: featuredItem.song.url
+          songUrl: featuredItem.song.songUrl
         });
       }
 
-      console.log(this.songs);
 
       // Setup our template and start our model
       this.template = Handlebars.compile($(this.template).html());
@@ -299,6 +300,42 @@ jQuery(function($) {
 
       // Set update the containers HTML
       $(this.el).html(html);
+
+      var self = this;
+
+      $('a.song').each(function(){
+
+        var url = $(this).attr( "href" );
+
+        var title;
+        var artist;
+        var mp3;
+
+        self.songs.forEach(function(song){
+          if(url == song.songUrl){
+
+            title = song.songName;
+            artist = song.songArtist;
+            mp3 = song.songUrl;
+
+          }
+        });
+
+        $(this).attr( "href", "");
+
+        $(this).on('click', function(){
+
+          console.log(title, artist, mp3);
+
+          myPlaylist.add({
+            title: title,
+            artist:artist,
+            mp3:mp3
+          }, true);
+        });
+
+
+      });
     }
 
   });
@@ -519,19 +556,19 @@ jQuery(function($) {
     var i = Data.artists.length -1;
     for(i; i >= 0; i--){
       var artist = Data.artists[i];
-      if(artist.name = featured[0]){
+      if(artist.name == featured[0]){
 
         //search album
         var j = artist.albums.length -1;
         for(j; j >= 0; j--){
           var album = artist.albums[j];
-          if(album.name = featured[1]){
+          if(album.name == featured[1]){
 
             //search song
             var k = album.songs.length -1;
             for(k; k >= 0; k--){
               var song = album.songs[k];
-              if(song.name = featured[2]){
+              if(song.name == featured[2]){
                 return {
                   artist: artist,
                   album: album,
@@ -571,6 +608,37 @@ jQuery(function($) {
       trigger: true
     });
   });
+
+  var myPlaylist = new jPlayerPlaylist({
+    jPlayer: "#jquery_jplayer_N",
+    cssSelectorAncestor: "#jp_container_N"
+  }, [
+    //{
+    //  //title:"Cro Magnon Man",
+    //  //artist:"The Stark Palace",
+    //  //mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+    //  //poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+    //}
+  ], {
+    playlistOptions: {
+      enableRemoveControls: true
+    },
+    supplied: "mp3",
+    useStateClassSkin: true,
+    autoBlur: false,
+    smoothPlayBar: true,
+    keyEnabled: true,
+    audioFullScreen: true
+  });
+
+  myPlaylist.add({
+    title:"Your Face",
+    artist:"The Stark Palace",
+    mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+    oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+    poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+  }, true);
+
 
 
 });
