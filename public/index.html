@@ -8,68 +8,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
   <link href="/assets/styles/jplayer.blue.monday.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css">
-  <body></body>
-  <div class="wrapper">
-    <header class="header">
+  <body>
+    <div class="header">
       <h1>Musicfy</h1>
       <ul class="nav">
         <li><a href="/">Home</a></li>
         <li><a href="/artists">Artists</a></li>
       </ul>
-    </header>
-    <div class="main"></div>
-    <div class="audioPlayer">
-      <div id="jp_container_N" role="application" aria-label="media player" class="jp-video jp-video-270p">
-        <div class="jp-type-playlist">
-          <div id="jquery_jplayer_N" class="jp-jplayer"></div>
-          <div class="jp-gui">
-            <div class="jp-video-play">
-              <button role="button" tabindex="0" class="jp-video-play-icon">play</button>
-            </div>
-            <div class="jp-interface">
-              <div class="jp-progress">
-                <div class="jp-seek-bar">
-                  <div class="jp-play-bar"></div>
-                </div>
+    </div>
+    <div class="wrapper">
+      <div class="main"></div>
+      <div class="audioPlayer">
+        <div id="jp_container_N" role="application" aria-label="media player" class="jp-video jp-video-270p">
+          <div class="jp-type-playlist">
+            <div id="jquery_jplayer_N" class="jp-jplayer"></div>
+            <div class="jp-gui">
+              <div class="jp-video-play">
+                <button role="button" tabindex="0" class="jp-video-play-icon">play</button>
               </div>
-              <div role="timer" aria-label="time" class="jp-current-time">&nbsp;</div>
-              <div role="timer" aria-label="duration" class="jp-duration">&nbsp;</div>
-              <div class="jp-controls-holder">
-                <div class="jp-controls">
-                  <button role="button" tabindex="0" class="jp-previous">previous</button>
-                  <button role="button" tabindex="0" class="jp-play">play</button>
-                  <button role="button" tabindex="0" class="jp-next">next</button>
-                  <button role="button" tabindex="0" class="jp-stop">stop</button>
-                </div>
-                <div class="jp-volume-controls">
-                  <button role="button" tabindex="0" class="jp-mute">mute</button>
-                  <button role="button" tabindex="0" class="jp-volume-max">max volume</button>
-                  <div class="jp-volume-bar">
-                    <div class="jp-volume-bar-value"></div>
+              <div class="jp-interface">
+                <div class="jp-progress">
+                  <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
                   </div>
                 </div>
-                <div class="jp-toggles">
-                  <button role="button" tabindex="0" class="jp-repeat">repeat</button>
-                  <button role="button" tabindex="0" class="jp-shuffle">shuffle</button>
-                  <button role="button" tabindex="0" class="jp-full-screen">full screen</button>
+                <div role="timer" aria-label="time" class="jp-current-time">&nbsp;</div>
+                <div role="timer" aria-label="duration" class="jp-duration">&nbsp;</div>
+                <div class="jp-controls-holder">
+                  <div class="jp-controls">
+                    <button role="button" tabindex="0" class="jp-previous">previous</button>
+                    <button role="button" tabindex="0" class="jp-play">play</button>
+                    <button role="button" tabindex="0" class="jp-next">next</button>
+                    <button role="button" tabindex="0" class="jp-stop">stop</button>
+                  </div>
+                  <div class="jp-volume-controls">
+                    <button role="button" tabindex="0" class="jp-mute">mute</button>
+                    <button role="button" tabindex="0" class="jp-volume-max">max volume</button>
+                    <div class="jp-volume-bar">
+                      <div class="jp-volume-bar-value"></div>
+                    </div>
+                  </div>
+                  <!--.jp-toggles-->
+                  <!--  button.jp-repeat(role='button', tabindex='0') repeat-->
+                  <!--  button.jp-shuffle(role='button', tabindex='0') shuffle-->
+                  <!--  button.jp-full-screen(role='button', tabindex='0') full screen-->
+                </div>
+                <div class="jp-details">
+                  <div aria-label="title" class="jp-title">&nbsp;</div>
                 </div>
               </div>
-              <div class="jp-details">
-                <div aria-label="title" class="jp-title">&nbsp;</div>
-              </div>
             </div>
+            <div class="jp-playlist">
+              <ul>
+                <!-- The method Playlist.displayPlaylist() uses this unordered list-->
+                <li>&nbsp;</li>
+              </ul>
+            </div>
+            <div class="jp-no-solution"><span>Update Required</span><a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a></div>
           </div>
-          <div class="jp-playlist">
-            <ul>
-              <!-- The method Playlist.displayPlaylist() uses this unordered list-->
-              <li>&nbsp;</li>
-            </ul>
-          </div>
-          <div class="jp-no-solution"><span>Update Required</span><a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a></div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
   <!-- ------------------------------->
   <!-- Templates-->
   <!-- ------------------------------->

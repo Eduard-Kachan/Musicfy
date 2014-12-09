@@ -19,9 +19,7 @@ html
 
   body
 
-  div.wrapper
-
-    header.header
+    .header
 
       h1 Musicfy
 
@@ -31,46 +29,46 @@ html
 
         li: a(href="/artists") Artists
 
+    .wrapper
+      .main
 
-    div.main
-
-    div.audioPlayer
-      #jp_container_N.jp-video.jp-video-270p(role='application', aria-label='media player')
-        .jp-type-playlist
-          #jquery_jplayer_N.jp-jplayer
-          .jp-gui
-            .jp-video-play
-              button.jp-video-play-icon(role='button', tabindex='0') play
-            .jp-interface
-              .jp-progress
-                .jp-seek-bar
-                  .jp-play-bar
-              .jp-current-time(role='timer', aria-label='time') &nbsp;
-              .jp-duration(role='timer', aria-label='duration') &nbsp;
-              .jp-controls-holder
-                .jp-controls
-                  button.jp-previous(role='button', tabindex='0') previous
-                  button.jp-play(role='button', tabindex='0') play
-                  button.jp-next(role='button', tabindex='0') next
-                  button.jp-stop(role='button', tabindex='0') stop
-                .jp-volume-controls
-                  button.jp-mute(role='button', tabindex='0') mute
-                  button.jp-volume-max(role='button', tabindex='0') max volume
-                  .jp-volume-bar
-                    .jp-volume-bar-value
-                .jp-toggles
-                  button.jp-repeat(role='button', tabindex='0') repeat
-                  button.jp-shuffle(role='button', tabindex='0') shuffle
-                  button.jp-full-screen(role='button', tabindex='0') full screen
-              .jp-details
-                .jp-title(aria-label='title') &nbsp;
-          .jp-playlist
-            ul
-              // The method Playlist.displayPlaylist() uses this unordered list
-              li &nbsp;
-          .jp-no-solution
-            span Update Required
-            a(href='http://get.adobe.com/flashplayer/', target='_blank') Flash plugin
+      .audioPlayer
+        #jp_container_N.jp-video.jp-video-270p(role='application', aria-label='media player')
+          .jp-type-playlist
+            #jquery_jplayer_N.jp-jplayer
+            .jp-gui
+              .jp-video-play
+                button.jp-video-play-icon(role='button', tabindex='0') play
+              .jp-interface
+                .jp-progress
+                  .jp-seek-bar
+                    .jp-play-bar
+                .jp-current-time(role='timer', aria-label='time') &nbsp;
+                .jp-duration(role='timer', aria-label='duration') &nbsp;
+                .jp-controls-holder
+                  .jp-controls
+                    button.jp-previous(role='button', tabindex='0') previous
+                    button.jp-play(role='button', tabindex='0') play
+                    button.jp-next(role='button', tabindex='0') next
+                    button.jp-stop(role='button', tabindex='0') stop
+                  .jp-volume-controls
+                    button.jp-mute(role='button', tabindex='0') mute
+                    button.jp-volume-max(role='button', tabindex='0') max volume
+                    .jp-volume-bar
+                      .jp-volume-bar-value
+                  //.jp-toggles
+                  //  button.jp-repeat(role='button', tabindex='0') repeat
+                  //  button.jp-shuffle(role='button', tabindex='0') shuffle
+                  //  button.jp-full-screen(role='button', tabindex='0') full screen
+                .jp-details
+                  .jp-title(aria-label='title') &nbsp;
+            .jp-playlist
+              ul
+                // The method Playlist.displayPlaylist() uses this unordered list
+                li &nbsp;
+            .jp-no-solution
+              span Update Required
+              a(href='http://get.adobe.com/flashplayer/', target='_blank') Flash plugin
 
 
 

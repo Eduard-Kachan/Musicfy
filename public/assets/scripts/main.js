@@ -31,27 +31,27 @@ jQuery(function($) {
             songs: [
               {
                 name: "Impact Prelude",
-                songUrl: "http://freemusicarchive.org/music/download/8c040f180e3ddb06026e0438c559d225bc4aef58"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"
               },
               {
                 name: "Impact Andante",
-                songUrl: "http://freemusicarchive.org/music/download/7b6f73a58d383e99494b81408b48183cf4669b7d"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"
               },
               {
                 name: "Impact Moderato",
-                songUrl: "http://freemusicarchive.org/music/download/1d4a66b0abbd480f54ab988f68b6ff3ad1e70a53"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               },
               {
                 name:"Impact intermezzo",
-                songUrl:"http://freemusicarchive.org/music/download/10bf455c40c5ce0f31216ad68a5bbca1ce86caac"
+                songUrl:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3"
               },
               {
                 name:"Impact Allegretto",
-                songUrl:"http://freemusicarchive.org/music/download/8341ea698f5b25c0914a284984143ce4be8f8205"
+                songUrl:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
               },
               {
                 name:"Impact Lento",
-                songUrl:"http://freemusicarchive.org/music/download/dad1ff2afde271935f58b2a2360bf3299d1b5748"
+                songUrl:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"
               }
             ]
           },
@@ -62,35 +62,35 @@ jQuery(function($) {
             songs: [
               {
                 name: "Autumn Day",
-                songUrl: "http://freemusicarchive.org/music/download/320f9608ee225796a471fad45ec9c086b223c8b4"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"
               },
               {
                 name: "Bathed in the Light",
-                songUrl: "http://freemusicarchive.org/music/download/4961e1ab6e24d45a17c8251188d3c768c8c03e43"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"
               },
               {
                 name: "Calmant",
-                songUrl: "http://freemusicarchive.org/music/download/50a59fad31fd2e7bd18c20bbd030012bb44127f4"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"
               },
               {
                 name: "Carefree",
-                songUrl: "http://freemusicarchive.org/music/download/e20f6afcfa8b4de35b742935de0fa7acef2335e0"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3"
               },
               {
                 name: "Clean Soul",
-                songUrl: "http://freemusicarchive.org/music/download/04cc067e125ae109b3d2674e328aab376e5bee96"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               },
               {
                 name: "Danse Morialta",
-                songUrl: "http://freemusicarchive.org/music/download/d36bd1f1709065a50fa2a5f7007bff37f3530851"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
               },
               {
                 name: "Dream Culture",
-                songUrl: "http://freemusicarchive.org/music/download/ea2040c9dc9bfc2d81793d787c3b1eb02a6cc9f2"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3"
               },
               {
                 name: "Enchanted Journey",
-                songUrl: "http://freemusicarchive.org/music/download/27eff71edef45463aa0bce09957a411286f37eaf"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               }
             ]
           }
@@ -108,31 +108,31 @@ jQuery(function($) {
             songs: [
               {
                 name: "1 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/162d1543b7073357e7d639686318de58b0fa9432"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"
               },
               {
                 name: "2 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/48df5c1c99fcb340a23e58891deee6d0127f0bf3"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"
               },
               {
                 name: "3 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/9bbf7d189673e2ae83643bdb4c3484c2fd2292b6"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"
               },
               {
                 name: "4 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/8f65fff2d5db95948e41bd7ac573123ead03d649"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3"
               },
               {
                 name: "5 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/66ebbe26f66dca0549a68169a41ce6f934d9ccf3"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               },
               {
                 name: "6 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/983a6697b6aec4daea3d2b551366f1fb98a8db90"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
               },
               {
                 name: "7 Live at the Winston",
-                songUrl: "http://freemusicarchive.org/music/download/a28a20b7eed892e7f42fb20d361efaeb97f7b698"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3"
               }
             ]
           },
@@ -143,43 +143,43 @@ jQuery(function($) {
             songs: [
               {
                 name: "Bones",
-                songUrl: "http://freemusicarchive.org/music/download/39d3e141238bc3ab9f51e6a37dab47493d90b471"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"
               },
               {
                 name: "Terminal beach",
-                songUrl: "http://freemusicarchive.org/music/download/9e1103509453910f350dc6d6f163f7ba59e655dc"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"
               },
               {
                 name: "Up on the mountain",
-                songUrl: "http://freemusicarchive.org/music/download/9e1103509453910f350dc6d6f163f7ba59e655dc"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               },
               {
                 name: "Mr. Vader wants to see you in his office",
-                songUrl: "http://freemusicarchive.org/music/download/2c717c3aeb2d64bbdeaf5b9804551ec47f11dcf4"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"
               },
               {
                 name: "Laughing all the way to the morgue",
-                songUrl: "http://freemusicarchive.org/music/download/8bacdadd447cc4718c3b66cc145ee6d9cdd46ee0"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
               },
               {
                 name: "Crooked mile",
-                songUrl: "http://freemusicarchive.org/music/download/d86f6fe83032b10b5c4a6054341f87d37209b0a5"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3"
               },
               {
                 name: "Pjerwoje znakomstwa",
-                songUrl: "http://freemusicarchive.org/music/download/0fc4be370be36799ce1b62497a80410684fa849e"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"
               },
               {
                 name: "White hell",
-                songUrl: "http://freemusicarchive.org/music/download/34c53f07ea02d36ca9d4b465cedcb884f3513192"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"
               },
               {
                 name: "Formikula",
-                songUrl: "http://freemusicarchive.org/music/download/38d99b85c9d368307a56d69b62733a2dce7c5a6e"
+                songUrl: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
               },
               {
                 name: "Ah yalan Irma",
-                songUrl: "http://freemusicarchive.org/music/download/eff27aa5918391ff7f2a8f17e45f5e0bcaf7b57d"
+                songUrl: "http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
               }
             ]
           }
@@ -305,14 +305,14 @@ jQuery(function($) {
 
       $('a.song').each(function(){
 
-        var url = $(this).attr( "href" );
+        var url = $(this).text();
 
         var title;
         var artist;
         var mp3;
 
         self.songs.forEach(function(song){
-          if(url == song.songUrl){
+          if(url == song.songName){
 
             title = song.songName;
             artist = song.songArtist;
@@ -325,13 +325,11 @@ jQuery(function($) {
 
         $(this).on('click', function(){
 
-          console.log(title, artist, mp3);
-
           myPlaylist.add({
             title: title,
             artist:artist,
             mp3:mp3
-          }, true);
+          }, false);
         });
 
 
@@ -550,6 +548,9 @@ jQuery(function($) {
 
   });
 
+
+
+
   var findSong = function(featured){
 
     //search artist
@@ -613,31 +614,17 @@ jQuery(function($) {
     jPlayer: "#jquery_jplayer_N",
     cssSelectorAncestor: "#jp_container_N"
   }, [
-    //{
-    //  //title:"Cro Magnon Man",
-    //  //artist:"The Stark Palace",
-    //  //mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-    //  //poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
-    //}
   ], {
     playlistOptions: {
       enableRemoveControls: true
     },
     supplied: "mp3",
-    useStateClassSkin: true,
+    useStateClassSkin: false,
     autoBlur: false,
-    smoothPlayBar: true,
-    keyEnabled: true,
-    audioFullScreen: true
+    smoothPlayBar: false,
+    keyEnabled: false,
+    audioFullScreen: false
   });
-
-  myPlaylist.add({
-    title:"Your Face",
-    artist:"The Stark Palace",
-    mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
-    poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
-  }, true);
 
 
 
