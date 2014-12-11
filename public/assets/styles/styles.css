@@ -67,53 +67,139 @@ h2.title {
   padding-left: 20px;
   margin: 0;
 }
-.artistPic {
-  width: 300px;
-  height: 300px;
-  float: left;
+h1.title {
+  padding: 19px;
+  padding-left: 10;
+  margin-top: 0;
+  background: rgba(1,1,1,0.5);
 }
-.albums,
-.songs {
-  display: block;
+.songsFeatured {
   list-style: none;
-  float: left;
-  margin: 0;
 }
-.albums img,
-.songs img {
+.songsFeatured li {
+  background: rgba(1,1,1,0.5);
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.songsFeatured li span {
+  display: block;
+  margin-left: 60px;
+  margin-top: -31px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.songsFeatured li span:hover {
+  cursor: pointer;
+}
+.songsFeatured li img {
   width: 50px;
-  height: 50px;
-  display: inline-block;
+  display: block;
 }
-.albums h3,
-.songs h3 {
-  display: inline-block;
-  margin: 0;
-  transform: translateY(-18px);
-  font-size: 22px;
+.artists {
+  list-style: none;
 }
 .artists div {
   display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: #555;
+  background: rgba(1,1,1,0.5);
   position: relative;
 }
 .artists div img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  display: block;
+}
+.artists div h3 {
+  display: block;
+  margin: 4px 10px;
 }
 .artists div a {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.artists div h3 {
-  color: #fff;
-  transform: translateY(-35px) translateX(-2px);
+.ufkhb {
+  list-style: none;
 }
+.ufkhb li {
+  background: rgba(1,1,1,0.5);
+  display: inline-block;
+}
+.ufkhb li img {
+  width: 50px;
+  display: block;
+  float: left;
+}
+.ufkhb li h3 {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.title {
+  background: rgba(1,1,1,0.5);
+}
+.title h1 {
+  display: block;
+  float: left;
+  margin: 18px 20px;
+}
+.title img {
+  width: 70px;
+  display: block;
+  float: left;
+}
+.album h1 {
+  font-size: 25px;
+}
+.songs {
+  list-style: none;
+}
+.songs li {
+  display: inline-block;
+  background: rgba(1,1,1,0.5);
+  margin: 5px;
+  padding: 5px;
+}
+.songs li span:hover {
+  cursor: pointer;
+}
+/*.artistPic*/
+/*width 300px*/
+/*height 300px*/
+/*float left*/
+/*.albums, .songs*/
+/*display block*/
+/*list-style none*/
+/*float left*/
+/*margin: 0*/
+/*img*/
+/*width 50px*/
+/*height 50px*/
+/*display inline-block*/
+/*h3*/
+/*display inline-block*/
+/*margin 0*/
+/*transform translateY(-18px)*/
+/*font-size 22px*/
+/*.artists*/
+/*div*/
+/*display inline-block*/
+/*width 200px*/
+/*height 200px*/
+/*margin-left 20px*/
+/*margin-bottom  20px*/
+/*background-color gray*/
+/*position relative*/
+/*img*/
+/*width 100%*/
+/*height 100%*/
+/*a*/
+/*position absolute*/
+/*width 100%*/
+/*height 100%*/
+/*h3*/
+/*color white*/
+/*transform translateY(-35px) translateX(-2px)*/
 .footer {
   padding: 20px;
 }

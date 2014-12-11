@@ -303,7 +303,7 @@ jQuery(function($) {
 
       var self = this;
 
-      $('a.song').each(function(){
+      $('span.song').each(function(){
 
         var url = $(this).text();
 
@@ -467,9 +467,12 @@ jQuery(function($) {
     //query
     artist: undefined,
     album: undefined,
+    songs: [],
 
     // Initialize View
     initialize: function(queryArtist, queryAlbum) {
+
+
 
       var i = 0;
 
@@ -513,14 +516,13 @@ jQuery(function($) {
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
 
-      var songs = [];
       //console.log(this.album.songs);
       i = this.album.songs.length - 1;
 
       for(i; i >= 0; i--){
         var song = this.album.songs[i];
 
-        songs.push({
+        this.songs.push({
           name: song.name,
           songUrl: song.songUrl
         });
@@ -531,7 +533,7 @@ jQuery(function($) {
         artist: this.artist.name,
         album: this.album.name,
         albumImageUrl: this.album.imageUrl,
-        songs: songs
+        songs: this.songs
       });
 
     },
@@ -544,6 +546,43 @@ jQuery(function($) {
 
       // Set update the containers HTML
       $(this.el).html(html);
+
+      var self = this;
+
+      $('span.song').each(function(){
+
+        var url = $(this).text();
+
+        var title;
+        var artist;
+        var mp3;
+
+        self.songs.forEach(function(song){
+          if(url == song.name){
+
+            title = song.name;
+            artist = self.artist.name;
+            mp3 = song.songUrl;
+
+          }
+        });
+
+        $(this).attr( "href", "");
+
+        $(this).on('click', function(){
+
+          myPlaylist.add({
+            title: title,
+            artist:artist,
+            mp3:mp3
+          }, false);
+        });
+
+
+      });
+
+
+
     }
 
   });

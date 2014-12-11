@@ -78,14 +78,15 @@
     <ul class="songsFeatured">
       {{#songs}}
       <li>
-        <h4><a class="song" href="{{songUrl}}">{{songName}}</a></h4>
+        <img src="{{albumImgUrl}}">
+        <span class="song" >{{songName}}</span>
       </li>
     {{/songs}}
     </ul>
     
   </script>
   <script id="artists" type="text/template">
-    <h1>{{title}}</h1>
+    <h1 class="title">{{title}}</h1>
     <div class="artists">
     {{#artists}}
       <div>
@@ -98,10 +99,14 @@
     
   </script>
   <script id="artist" type="text/template">
-    <h1 class="title">{{artist}}</h1>
-    <img  class="artistPic" src = "{{artistImageUrl}}"/>
-    <h2 class="title">Albums:</h2>
-    <ul class="albums">
+    <div class="title">
+      <img  class="artistPic" src = "{{artistImageUrl}}"/>
+      <h1>{{artist}}</h1>
+    </div>
+    
+    <h2>Albums:</h2>
+    
+    <ul class="ufkhb">
     {{#albums}}
       <li>
         <img src = "{{imageUrl}}">
@@ -112,13 +117,17 @@
     
   </script>
   <script id="album" type="text/template">
-    <h1 class="title">{{artist}}: {{album}}</h1>
-    <img src = "{{albumImageUrl}}" class="artistPic"/>
-    <h2 class="title">Songs:</h2>
+    <div class="title album">
+      <img src = "{{albumImageUrl}}" class="artistPic"/>
+      <h1 >{{artist}}: {{album}}</h1>
+    </div>
+    
+    <h2>Songs:</h2>
+    
     <ul class="songs">
     {{#songs}}
       <li>
-        <h4><a href = "/artists/{{url}}">{{name}}</a></h4>
+        <span class="song" >{{name}}</span>
       </li>
     {{/songs}}
     </ul>

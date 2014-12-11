@@ -93,48 +93,167 @@ h2.title
   padding-left 20px
   margin 0
 
-.artistPic
-  width 300px
-  height 300px
-  float left
 
-.albums, .songs
-  display block
+// -----------------------------
+// Home
+// -----------------------------
+
+h1.title
+  padding 19px
+  padding-left 10
+  margin-top 0
+  background rgba(1,1,1,0.5)
+
+.songsFeatured
   list-style none
-  float left
-  margin: 0
-  img
-    width 50px
-    height 50px
+
+  li
+    background rgba(1,1,1,0.5)
     display inline-block
-  h3
-    display inline-block
-    margin 0
-    transform translateY(-18px)
-    font-size 22px
+    margin-left 5px
+    margin-bottom 5px
+
+    span
+      display block
+      margin-left 60px
+      margin-top -31px
+      margin-bottom 15px
+      margin-right 10px
+
+    span:hover
+      cursor pointer
+
+    img
+      width 50px
+      display block
+
+
+// -----------------------------
+// Artists
+// -----------------------------
 
 .artists
+  list-style none
+
   div
     display inline-block
-    width 200px
-    height 200px
-    margin-left 20px
-    margin-bottom  20px
-    background-color gray
+    background rgba(1,1,1,0.5)
     position relative
 
     img
-      width 100%
-      height 100%
+      width 100px
+      display block
+
+    h3
+      display block
+      margin 4px 10px
 
     a
       position absolute
       width 100%
       height 100%
 
+// -----------------------------
+// Albums
+// -----------------------------
+
+.ufkhb
+  list-style none
+  li
+    background rgba(1,1,1,0.5)
+    display inline-block
+
+    img
+      width 50px
+      display block
+      float left
+
     h3
-      color white
-      transform translateY(-35px) translateX(-2px)
+      display block
+      float left
+      margin-left 10px
+      margin-right 10px
+
+
+
+
+.title
+  background rgba(1,1,1,0.5)
+
+  h1
+    display block
+    float left
+    margin 18px 20px
+  img
+    width 70px
+    display block
+    float left
+
+// -----------------------------
+// Albums
+// -----------------------------
+
+.album
+  h1
+    font-size 25px
+
+.songs
+  list-style none
+  li
+    display inline-block
+    background rgba(1,1,1,0.5)
+    margin 5px
+    padding 5px
+
+    span:hover
+      cursor pointer
+
+
+
+
+
+/*.artistPic*/
+  /*width 300px*/
+  /*height 300px*/
+  /*float left*/
+
+/*.albums, .songs*/
+  /*display block*/
+  /*list-style none*/
+  /*float left*/
+  /*margin: 0*/
+  /*img*/
+    /*width 50px*/
+    /*height 50px*/
+    /*display inline-block*/
+  /*h3*/
+    /*display inline-block*/
+    /*margin 0*/
+    /*transform translateY(-18px)*/
+    /*font-size 22px*/
+
+/*.artists*/
+  /*div*/
+    /*display inline-block*/
+    /*width 200px*/
+    /*height 200px*/
+    /*margin-left 20px*/
+    /*margin-bottom  20px*/
+    /*background-color gray*/
+    /*position relative*/
+
+    /*img*/
+      /*width 100%*/
+      /*height 100%*/
+
+    /*a*/
+      /*position absolute*/
+      /*width 100%*/
+      /*height 100%*/
+
+    /*h3*/
+      /*color white*/
+      /*transform translateY(-35px) translateX(-2px)*/
 
 // -----------------------------
 // Footer
